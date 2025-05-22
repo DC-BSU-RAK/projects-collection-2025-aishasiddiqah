@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/savedbg"
+    tools:context=".AllRecipesActivity">
+
+    <ImageButton
+        android:id="@+id/instructBtn3"
+        android:layout_width="71dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        app:srcCompat="@drawable/instructbtn" />
+
+    <ImageButton
+        android:id="@+id/allrecsBtn2"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.02"
+        app:srcCompat="@drawable/savebtn" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="375dp"
+        android:layout_height="474dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Inner content must be a single direct child -->
+        <LinearLayout
+            android:id="@+id/scrollContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Add your content here -->
+
+            <ImageButton
+                android:id="@+id/pancakeBtn"
+                android:layout_width="331dp"
+                android:layout_height="123dp"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="getRecipeButtonClick"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.235"
+                app:srcCompat="@drawable/pancakebtn" />
+
+            <ImageButton
+                android:id="@+id/avocadoBtn"
+                android:layout_width="331dp"
+                android:layout_height="123dp"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="getRecipeButtonClick"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/toastbtn" />
+
+            <ImageButton
+                android:id="@+id/muffinBtn"
+                android:layout_width="331dp"
+                android:layout_height="123dp"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="getRecipeButtonClick"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/muffinbtn" />
+
+            <ImageButton
+                android:id="@+id/wrapBtn"
+                android:layout_width="331dp"
+                android:layout_height="123dp"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="getRecipeButtonClick"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/chickenbtn" />
+
+            <ImageButton
+                android:id="@+id/saladBtn"
+                android:layout_width="331dp"
+                android:layout_height="123dp"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="getRecipeButtonClick"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/saladbtn" />
+
+            <ImageButton
+                android:id="@+id/spaghettiBtn"
+                android:layout_width="331dp"
+                android:layout_height="123dp"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="getRecipeButtonClick"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/spaghettibtn" />
+
+            <ImageButton
+                android:id="@+id/soupBtn"
+                android:layout_width="331dp"
+                android:layout_height="123dp"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="getRecipeButtonClick"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/soupbtn" />
+
+            <!-- Add more views as needed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homeBtn3"
+        android:layout_width="67dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.02"
+        app:srcCompat="@drawable/homebtn" />
+
+    <ImageButton
+        android:id="@+id/profileBtn3"
+        android:layout_width="67dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.02"
+        app:srcCompat="@drawable/profilebtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

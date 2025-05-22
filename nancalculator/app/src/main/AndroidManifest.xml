@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookNookNANCalculator"
+        tools:targetApi="31">
+        <activity
+            android:name=".Output10"
+            android:exported="false" />
+        <activity
+            android:name=".Output9"
+            android:exported="false" />
+        <activity
+            android:name=".Output8"
+            android:exported="false" />
+        <activity
+            android:name=".Output7"
+            android:exported="false" />
+        <activity
+            android:name=".Output6"
+            android:exported="false" />
+        <activity
+            android:name=".Output5"
+            android:exported="false" />
+        <activity
+            android:name=".Output4"
+            android:exported="false" />
+        <activity
+            android:name=".Output3"
+            android:exported="false" />
+        <activity
+            android:name=".Output2"
+            android:exported="false" />
+        <activity
+            android:name=".Output1"
+            android:exported="false" />
+        <activity
+            android:name=".ObjectsPopup"
+            android:exported="false" />
+        <activity
+            android:name=".InstructionsPopup"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
